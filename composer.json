@@ -1,0 +1,10 @@
+{
+    "name": "bg/smsgateway",
+    "description": "PHP library for smsgateway.me",
+    "require": {
+        "php": ">=5.3.0"
+    }
+    "autoload": {
+        "files": ["smsGateway.php"]
+    }
+}
