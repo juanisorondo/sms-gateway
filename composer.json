@@ -1,5 +1,5 @@
 {
-    "name": "juanisorondo/smsGateway",
+    "name": "juanisorondo/sms-gateway",
     "description": "PHP library for smsgateway.me",
     "require": {
         "php": ">=5.3.0"
