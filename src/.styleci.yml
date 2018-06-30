@@ -5,6 +5,7 @@ enabled:
   - single_blank_line_at_eof
 disabled:
   - concat_without_spaces
+  - blank_line_before_return
 finder:
   name: "*.php"
   not-name: "*.blade.php"
