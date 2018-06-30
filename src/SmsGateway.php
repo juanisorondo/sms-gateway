@@ -4,7 +4,7 @@ namespace juanisorondo\SmsGateway;
 
 class SmsGateway {
 
-    static $baseUrl = "https://smsgateway.me";
+    public static $baseUrl = "https://smsgateway.me";
 
     public function __construct($email, $password) {
         $this->email = $email;
@@ -91,8 +91,9 @@ class SmsGateway {
 
         $return['response'] = json_decode($result, true);
 
-        if ($return['response'] == false)
+        if ($return['response'] == false) {
             $return['response'] = $result;
+        }
 
         $return['status'] = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
